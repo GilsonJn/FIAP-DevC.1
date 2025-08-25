@@ -4,34 +4,115 @@ namespace MyApp
 {
     internal class Program
     {
+        static String nome;
+        static int opcao = 0;
+        
+
+        /// <summary>
+        /// Função com SOBRECARGA STRING
+        /// </summary>
+        /// <param name="value">Valor que deseja imprimir</param>
+        static void Print(string value)
+        {
+            Console.WriteLine(value);
+        }
+
+        /// <summary>
+        /// Função com SOBRECARGA double
+        /// </summary>
+        /// <param name="value">Valor que deseja imprimir</param>
+        static void Print(double value)
+        {
+            Console.WriteLine(value);
+        }
+
+        /// <summary>
+        /// Função que calcula da area do CIRCULO
+        /// </summary>
+        /// <param name="value">Raio do circulo</param>
+        /// <returns>Area do Circulo</returns>
+        static double AreaCirculo(double value)
+        {
+            double area = 0;
+            area = Math.Pow(value, 2) * Math.PI;
+            return area;
+        }
+
+        /// <summary>
+        /// Função que calcula da area do TRIANGULO
+        /// </summary>
+        /// <param name="baseTri">Base do triangulo</param>
+        /// <param name="altura">Altura do triangulo</param>
+        /// <returns>Area do triangulo</returns>
+        static double AreaTriangulo(double baseTri, double altura)
+        {
+            double area = 0;
+            area = (baseTri * altura) / 2;
+            return area;
+        }
+
+        /// <summary>
+        /// Função que calcula da area do RETANGULO
+        /// </summary>
+        /// <param name="baseReta">Base do retangulo</param>
+        /// <param name="altura">Altura do retangulo</param>
+        /// <returns>Area do retangulo</returns>
+        static double AreaRetangulo(double baseReta, double altura)
+        {
+            double area = 0;
+            area = baseReta*altura;
+            return area;
+        }
+
         static void Main(string[] args)
         {
-            String aluno1, aluno2;
-            int age1, age2;
+            Print("Digite seu nome: ");
+            nome = Console.ReadLine();
 
-            Console.WriteLine("Insira o seu nome do primeiro aluno: ");
-            aluno1 = Console.ReadLine();
+            Print(nome + " escolha a conta que deseja");
+            Print("1 - Area do Cirlulo 2 - Area do Triangulo 3 - Area do Retangulo");
+            opcao = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Insira a idade desse aluno:");
-            age1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Insira o seu nome do segundo aluno: ");
-            aluno2 = Console.ReadLine();
-
-            Console.WriteLine("Insira a idade desse aluno:");
-            age2 = int.Parse(Console.ReadLine());
-
-            if (age1 > age2)
+            if (opcao == 1)
             {
-                Console.WriteLine($"{aluno1} é o mais velho e o {aluno2} é o mais novo.");
+                double raio = 0;
+
+                Print("Insira o raio:");
+                raio = double.Parse(Console.ReadLine());
+
+                double area = AreaCirculo(raio);
+
+                Print("A area do circulo é " + area);
             }
-            if (age2 > age1)
+            if (opcao == 2)
             {
-                Console.WriteLine($"{aluno2} é o mais velho e o {aluno1} é o mais novo.");
+                double baseTriangulo = 0;
+                double altura = 0;
+
+                Print("Insira a base do triangulo:");
+                baseTriangulo = double.Parse(Console.ReadLine());
+
+                Print("Insira a altura do triangulo:");
+                altura = double.Parse(Console.ReadLine());
+
+                double area = AreaTriangulo(baseTriangulo, altura);
+
+                Print("A area do triangulo é " + area);
             }
-            if (age1 == age2)
+            if (opcao == 3)
             {
-                Console.WriteLine("Ambos os alunos têm a mesma idade.");
+                double baseRetangulo = 0;
+                double altura = 0;
+
+                Print("Insira a base do Retangulo:");
+                baseRetangulo = double.Parse(Console.ReadLine());
+
+                Print("Insira a altura do Retangulo:");
+                altura = double.Parse(Console.ReadLine());
+
+                double area = AreaRetangulo(baseRetangulo, altura);
+
+                Print("A area do Retangulo é " + area);
             }
         }
     }
