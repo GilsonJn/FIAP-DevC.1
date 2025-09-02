@@ -5,7 +5,9 @@ VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartC", "StartC\StartC.csproj", "{EA9BA680-8216-4514-85DD-F9AC9422AC64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula2", "Aula2\Aula2.csproj", "{FE233ECC-A837-45E3-9D27-15EEEC54CA72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcArea", "Aula2\CalcArea.csproj", "{FE233ECC-A837-45E3-9D27-15EEEC54CA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piramide", "Piramide\Piramide.csproj", "{29742AE4-FBBF-4888-94E7-58B033841186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FE233ECC-A837-45E3-9D27-15EEEC54CA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE233ECC-A837-45E3-9D27-15EEEC54CA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE233ECC-A837-45E3-9D27-15EEEC54CA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29742AE4-FBBF-4888-94E7-58B033841186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29742AE4-FBBF-4888-94E7-58B033841186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29742AE4-FBBF-4888-94E7-58B033841186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29742AE4-FBBF-4888-94E7-58B033841186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
