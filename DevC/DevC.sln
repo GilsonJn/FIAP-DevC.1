@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparaIdade", "ComparaIdad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senha", "Senha\Senha.csproj", "{670C6BFD-AADD-4048-9B64-71DD0507E9BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{F4A79B33-D968-4745-AE9C-8653F63EE7FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{670C6BFD-AADD-4048-9B64-71DD0507E9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{670C6BFD-AADD-4048-9B64-71DD0507E9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{670C6BFD-AADD-4048-9B64-71DD0507E9BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A79B33-D968-4745-AE9C-8653F63EE7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A79B33-D968-4745-AE9C-8653F63EE7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A79B33-D968-4745-AE9C-8653F63EE7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A79B33-D968-4745-AE9C-8653F63EE7FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
