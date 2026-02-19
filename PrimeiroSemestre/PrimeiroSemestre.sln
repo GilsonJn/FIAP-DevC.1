@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevC", "DevC\DevC.csproj", "{97249422-DB6F-47F5-BF0D-BB93B187431D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeiroSemestre", "DevC\PrimeiroSemestre.csproj", "{97249422-DB6F-47F5-BF0D-BB93B187431D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piramide", "Piramide\Piramide.csproj", "{19295B8D-87A5-491B-9C04-8CF27088BA4B}"
 EndProject
