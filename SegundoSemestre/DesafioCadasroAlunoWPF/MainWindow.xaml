@@ -1,0 +1,39 @@
+﻿<Window x:Class="DesafioCadasroAlunoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesafioCadasroAlunoWPF"
+        mc:Ignorable="d"
+        Title="Cadastro de Alunor" Height="450" Width="250" WindowStartupLocation="CenterScreen">
+    
+    <StackPanel Margin="10">
+        <TextBlock Text="Sistema de Cadastro" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <TextBlock Text="ID do Aluno (Apenas números):"/>
+        <TextBox x:Name="txtId" Padding="5" Margin="0,5,0,15"/>
+
+        <TextBlock Text="Nome do Aluno:"/>
+        <TextBox x:Name="txtNome" Padding="5" Margin="0,5,0,20"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+            <Button Content="Adicionar Aluno" Width="120" Padding="8" Margin="0,0,10,0" Click="BtnAdicionar_Click"/>
+            <Button Content="Buscar por ID" Width="100" Padding="8" Click="BtnBuscar_Click"/>
+        </StackPanel>
+
+        <TextBlock x:Name="txtMensagem" FontWeight="Bold" TextWrapping="Wrap" Margin="0,0,0,15" TextAlignment="Center"/>
+
+        <TextBlock Text="Lista de Alunos Cadastrados:"/>
+        <ListBox x:Name="lstAlunos" Height="100" Margin="0,5,0,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <Run Text="ID: " FontWeight="Bold"/><Run Text="{Binding Key}"/>
+                        <Run Text=" | Nome: " FontWeight="Bold"/><Run Text="{Binding Value}"/>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+    
+</Window>
