@@ -14,7 +14,6 @@ namespace Generics
         public void Adicionar (T item)
         {
             itens.Add(item);
-            Console.WriteLine($"Item adicionado: {item}");
         }
 
         public void Remover(int id)
@@ -28,9 +27,12 @@ namespace Generics
             return itens[id];
         }
 
-        public List<T> ListarTodos()
+        public void ListarTodos()
         {
-            return itens;
+            foreach (var item in itens)
+            {
+                Console.WriteLine(item);
+            }
         }
 
     }

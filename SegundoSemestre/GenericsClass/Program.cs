@@ -42,8 +42,8 @@ namespace MyApp
             // --- TESTE 1: Com tipo STRING ---
             Console.WriteLine("--- CADASTRO DE STRINGS ---");
             Cadastro<string> cadastroTextos = new Cadastro<string>();
-            cadastroTextos.Salvar(1, "Desenvolvimento Web");
-            cadastroTextos.Salvar(2, "Engenharia de Software");
+            cadastroTextos.Salvar(1, "Terra");
+            cadastroTextos.Salvar(2, "Agua");
 
             string textoBuscado = cadastroTextos.BuscarPorId(1);
             Console.WriteLine($"Busca ID 1: {textoBuscado}\n");
@@ -52,7 +52,7 @@ namespace MyApp
             // --- TESTE 2: Com tipo INT ---
             Console.WriteLine("--- CADASTRO DE NÚMEROS (INT) ---");
             Cadastro<int> cadastroNumeros = new Cadastro<int>();
-            cadastroNumeros.Salvar(100, 55420); // Ex: Salvando um CEP ou Código
+            cadastroNumeros.Salvar(100, 55420); 
             cadastroNumeros.Salvar(200, 99887);
 
             int numeroBuscado = cadastroNumeros.BuscarPorId(200);

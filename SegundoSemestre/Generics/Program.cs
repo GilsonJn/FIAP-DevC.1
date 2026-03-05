@@ -52,25 +52,43 @@ namespace Generics
             Console.WriteLine($"Item removido do topo: {pecaAnterior}"); // Vai remover o Segundo
             Console.WriteLine($"Total de itens agora: {pilha.Contar()}");
 
-            
+
+        // Desafio: Criar um sistema de estoque genérico para gerenciar produtos
+
+            // Exemplo 1: Strings (produtos)
             Estoque<string> estoque = new Estoque<string>();
             estoque.Adicionar("Produto A");
             estoque.Adicionar("Produto B");
             estoque.Adicionar("Produto C");
     
             Console.WriteLine("\nItens no estoque:");
-            foreach (var itemEstoque in estoque.ListarTodos())
-            {
-                Console.WriteLine(itemEstoque);
-            }
+            estoque.ListarTodos();
     
             estoque.Remover(1); // Remove o "Produto B"
     
             Console.WriteLine("\nItens no estoque após remoção:");
-            foreach (var itemEstoque in estoque.ListarTodos())
-            {
-                Console.WriteLine(itemEstoque);
-            }
+            estoque.ListarTodos();
+
+            Console.WriteLine("\nItens no estoque com id 1:");
+            Console.WriteLine(estoque.BuscaPorId(1)); // Deve retornar "Produto C"
+
+            // Exemplo 2: Inteiros (pedidos)
+            Estoque<int> estoquePedidos = new Estoque<int>();
+            estoquePedidos.Adicionar(1001);
+            estoquePedidos.Adicionar(1002);
+            estoquePedidos.Adicionar(1003);
+
+            Console.WriteLine("\nPedidos no estoque:");
+            estoquePedidos.ListarTodos();
+
+            // Exemplo 3: Objetos (usuarios)
+            Estoque<Usuario> estoqueUsuarios = new Estoque<Usuario>();
+            estoqueUsuarios.Adicionar(new Usuario { Nome = "Alice" });
+            estoqueUsuarios.Adicionar(new Usuario { Nome = "Bob" });
+            estoqueUsuarios.Adicionar(new Usuario { Nome = "Charlie" });
+
+            Console.WriteLine("\nUsuários no estoque:");
+            estoqueUsuarios.ListarTodos();
 
         }
     }
