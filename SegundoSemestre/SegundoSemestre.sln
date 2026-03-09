@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioCadastroAluno", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioCadasroAlunoWPF", "DesafioCadasroAlunoWPF\DesafioCadasroAlunoWPF.csproj", "{D0CA9A68-F6BC-4903-8975-5E904AFFD369}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP1_Cadastro", "CP1_Cadastro\CP1_Cadastro.csproj", "{C0ADBBD4-0EA7-4C6A-917F-8F3EACFE41AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D0CA9A68-F6BC-4903-8975-5E904AFFD369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0CA9A68-F6BC-4903-8975-5E904AFFD369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0CA9A68-F6BC-4903-8975-5E904AFFD369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0ADBBD4-0EA7-4C6A-917F-8F3EACFE41AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0ADBBD4-0EA7-4C6A-917F-8F3EACFE41AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0ADBBD4-0EA7-4C6A-917F-8F3EACFE41AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0ADBBD4-0EA7-4C6A-917F-8F3EACFE41AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
