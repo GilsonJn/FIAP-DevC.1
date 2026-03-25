@@ -40,7 +40,6 @@ namespace MyApp
 
                         Console.Write("Digite o nome: ");
                         string nomeInput = Console.ReadLine();
-                        Pessoa nome = new Pessoa { Nome = nomeInput };
                         cadastro.Adicionar(idPessoa, new Pessoa { Nome = nomeInput });
 
                         break;
@@ -54,13 +53,13 @@ namespace MyApp
                         id = Console.ReadLine();
 
                         // Validar se o id é um número inteiro
-                        if (!int.TryParse(id, out int idPessoaFind))
+                        if (!int.TryParse(id, out int idBusca))
                         {
                             Console.WriteLine("ID inválido. Por favor, digite um número inteiro.");
                             return;
                         }
 
-                        cadastro.Buscar(idPessoaFind);
+                        cadastro.Buscar(idBusca);
                         break;
 
                     case "4":
@@ -68,12 +67,12 @@ namespace MyApp
                         id = Console.ReadLine();
 
                         // Validar se o id é um número inteiro
-                        if (!int.TryParse(id, out int idPessoaDelete))
+                        if (!int.TryParse(id, out int idDelete))
                         {
                             Console.WriteLine("ID inválido. Por favor, digite um número inteiro.");
                             return;
                         }
-                        cadastro.Apagar(idPessoaDelete);
+                        cadastro.Apagar(idDelete);
                         break;
 
                     case "5":
