@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP1_Cadastro", "CP1_Cadastr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeitorArquivos", "LeitorArquivos\LeitorArquivos.csproj", "{D7D4A1B2-6D36-4F47-86D8-9A586E061685}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializacaoJson", "SerializacaoJson\SerializacaoJson.csproj", "{6E18ACA8-A27B-4416-8165-A075C03B84A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializacaoJsonDesafio", "SerializacaoJsonDesafio\SerializacaoJsonDesafio.csproj", "{48CA1A08-2B7E-4DA7-A1C2-DA8EF5E04769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{D7D4A1B2-6D36-4F47-86D8-9A586E061685}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7D4A1B2-6D36-4F47-86D8-9A586E061685}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7D4A1B2-6D36-4F47-86D8-9A586E061685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E18ACA8-A27B-4416-8165-A075C03B84A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E18ACA8-A27B-4416-8165-A075C03B84A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E18ACA8-A27B-4416-8165-A075C03B84A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E18ACA8-A27B-4416-8165-A075C03B84A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CA1A08-2B7E-4DA7-A1C2-DA8EF5E04769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CA1A08-2B7E-4DA7-A1C2-DA8EF5E04769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CA1A08-2B7E-4DA7-A1C2-DA8EF5E04769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CA1A08-2B7E-4DA7-A1C2-DA8EF5E04769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
